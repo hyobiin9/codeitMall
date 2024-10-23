@@ -3,8 +3,6 @@ import ProductList from "@/components/ProductList";
 import SearchForm from "@/components/SearchForm";
 import axios from "@/lib/axios";
 import styles from "@/styles/Home.module.css";
-import Header from "@/components/Header";
-import Container from "@/components/Container";
 
 export default function Home() {
   const [products, setProducts] = useState([]);
@@ -22,7 +20,7 @@ export default function Home() {
   return (
     <>
       <SearchForm />
-      <ProductList className={styles.products} products={products} />
+      <ProductList className={styles.productList} products={products} />
     </>
   );
 }
